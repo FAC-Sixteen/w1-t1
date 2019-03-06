@@ -14,19 +14,31 @@
     <section class="section">
 
       <h3 class="section__heading">Contact Us</h3>
+      <p class="section__paragraph">
+        please send us a short message with the basic details of what you are contacting us for.
+      </p>
 
       <form class ="form">
 
-        <label for="name" class="form__label">Name</label>
-        <input required type="text" id="name" class="form__name"/>
-        <br/>
-        <label for="email" class="form__label">Email</label>
-        <input pattern="([\w._%+-]+@[\w.-]+[^..]\.[a-zA-Z]{2,4})" required type="email" id="email" class="form__email"/>
-        <br/>
-        <label for="msg" class="form__label">Message</label>
-        <input required type="text" id="msg" class="form__msg"/>
-        <br/>
-        <button type="submit" class="form__button">Submit</button>
+        <div class="form--left">
+          <label for="name" class="form__label">Name</label>
+          <br/>
+          <input required type="text" id="name" class="form__name"/>
+          <br/><br/>
+          <label for="email" class="form__label">Email</label>
+          <br/>
+          <input pattern="([\w._%+-]+@[\w.-]+[^..]\.[a-zA-Z]{2,4})" required type="email" id="email" class="form__email"/>
+        </div>
+
+        <div class="form--right">
+          <label for="msg" class="form__label">Message</label>
+          <br/>
+          <textarea maxlength="400" required type="text" id="msg" class="form__msg"></textarea>
+        </div>
+
+        <div class="form__button--wrapper">
+          <button type="submit" class="form__button">Submit</button>
+        </div>
 
       </form>
 

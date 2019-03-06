@@ -8,8 +8,39 @@ modifier = .block__element--modifier
 
 /* ----------- Blocks -------------- */
 
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  margin-left: 5%;
+}
 
 /* ------------ Elements --------------- */
 
+.form__msg {
+  height: 100px;
+  width: 80%;
+  min-width: 15rem;
+}
+
+.form__button {
+  margin-top: 1rem;
+}
 
 /* -------------Modifiers --------------- */
+
+.form--right {
+  margin-top: 1rem;
+  min-width: 50%;
+  max-width: 100%;
+}
+.form--left {
+  margin-top: 1rem;
+  min-width: 50%;
+  max-width: 100%;
+}
+
+.form__button--wrapper {
+  width: 100%;
+}
