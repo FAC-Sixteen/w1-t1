@@ -11,9 +11,13 @@ modifier = .block__element--modifier
 .form {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 .section {
-  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  border-bottom: 1px solid black;
 }
 
 /* ------------ Elements --------------- */
@@ -21,6 +25,19 @@ modifier = .block__element--modifier
 .header__image {
     max-width: 100%;
     height: auto;
+}
+.section__heading {
+    width: 100%;
+}
+.section__text {
+    width: 50%;
+    float: left;
+}
+
+.section__img {
+    width: 50%;
+    float: right;
+    min-width: 20rem;
 }
 
 .form__msg {
@@ -34,6 +51,10 @@ modifier = .block__element--modifier
 }
 
 /* -------------Modifiers --------------- */
+
+.section__img--width {
+    width: 100%;
+}
 
 .form--right {
   margin-top: 1rem;
