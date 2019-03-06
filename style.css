@@ -18,6 +18,11 @@ modifier = .block__element--modifier
 
 /* ------------ Elements --------------- */
 
+.header__image {
+    max-width: 100%;
+    height: auto;
+}
+
 .form__msg {
   height: 100px;
   width: 80%;
