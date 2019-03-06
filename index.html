@@ -8,7 +8,30 @@
     <title>Lucky 13</title>
 </head>
 <body>
-    
+
+
+
+    <section class="section">
+
+      <h3 class="section__heading">Contact Us</h3>
+
+      <form class ="form">
+
+        <label for="name" class="form__label">Name</label>
+        <input required type="text" id="name" class="form__name"/>
+        <br/>
+        <label for="email" class="form__label">Email</label>
+        <input pattern="([\w._%+-]+@[\w.-]+[^..]\.[a-zA-Z]{2,4})" required type="email" id="email" class="form__email"/>
+        <br/>
+        <label for="msg" class="form__label">Message</label>
+        <input required type="text" id="msg" class="form__msg"/>
+        <br/>
+        <button type="submit" class="form__button">Submit</button>
+
+      </form>
+
+    </section>
+
     <script src="scripts.js"></script>
 </body>
 </html>
