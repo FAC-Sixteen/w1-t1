@@ -21,6 +21,7 @@ modifier = .block__element--modifier
   display: flex;
   flex-wrap: wrap;
   padding-left: 5%;
+  padding-right: 5%;
   border-bottom: 1px solid black;
 }
 
@@ -28,6 +29,7 @@ modifier = .block__element--modifier
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: 1rem 0;
 }
 
 .footer {
@@ -51,13 +53,20 @@ modifier = .block__element--modifier
 }
 .section__text {
     width: 50%;
-    float: left;
 }
 
 .section__img {
     width: 50%;
-    float: right;
-    min-width: 20rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section__text {
+      width: 100%;
+  }
+
+  .section__img {
+      width: 100%;
+  }
 }
 
 .form__msg {
@@ -71,7 +80,7 @@ modifier = .block__element--modifier
 }
 
 .article__img {
-  width: 80%;
+  width: 100%;
   height:auto;
 }
 
@@ -131,21 +140,26 @@ modifier = .block__element--modifier
   max-width: 100%;
 }
 
-.article--left {
+.article--width {
   margin-top: 1rem;
   width: 50%;
+  padding: 0 5%;
 }
 
-.article--right {
-  margin-top: 1rem;
-  width: 50%;
+.article--img {
+  text-align: center;
+}
+
+.article--backcolor1 {
+  background-color: lime;
+}
+
+.article--backcolor2 {
+  background-color: pink;
 }
 
 @media screen and (max-width: 600px) {
-  .article--right {
-    width: 100%;
-  }
-  .article--left {
+  .article--width {
     width: 100%;
   }
 }
