@@ -70,3 +70,103 @@ modifier = .block__element--modifier
 .form__button--wrapper {
   width: 100%;
 }
+/* done */
+
+
+.header__ul {  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding-left: 33.33%;
+ 
+}
+
+
+.header__ul--li {
+  padding-left: 7%;  
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  
+}
+
+
+.header__ul--li .ul__li--a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* display: inline-block;
+  text-align: center; */
+}
+
+.header__ul--li .ul__li--a:hover {
+ text-decoration: underline;
+ text-decoration-color: #808080;
+}
+
+@media (max-width: 1024px) { /*  Ipad Pro      */
+  .header__ul {
+    padding-left: 22%;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) { /*  ipad     */
+  .header__ul {
+    padding-left: 16%;
+  }
+}
+
+@media (max-width: 414px) { /*  iphone 6/7/8 plus      */
+  .header__ul {
+    padding-left: 11.5%;
+   
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 411px) { /*  iphone 5      */
+  .header__ul {
+    padding-left: 7%;
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 375px) { /*  iphone x      */
+  .header__ul {
+    padding-left: 0%;
+  }
+}
+
+@media (max-width: 360px) { /*  iphone 5      */
+  .header__ul {
+    padding-left: 6%;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) { /*  iphone 5      */
+  .header__ul {
+    padding-left: 0%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
