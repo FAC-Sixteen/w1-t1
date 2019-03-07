@@ -79,6 +79,13 @@ modifier = .block__element--modifier
 .section__img--width {
     width: 100%;
 }
+.section--font {
+    font-family: "Vollkorn", serif;
+}
+
+.section--reverse {
+    flex-wrap: wrap-reverse;
+}
 
 .form--right {
   margin-top: 1rem;
