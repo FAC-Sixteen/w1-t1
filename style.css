@@ -4,7 +4,11 @@ element = .block__element
 modifier = .block__element--modifier
             .block--modifier
 */
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 /* ----------- Blocks -------------- */
 
@@ -17,7 +21,25 @@ modifier = .block__element--modifier
   display: flex;
   flex-wrap: wrap;
   padding-left: 5%;
+  padding-right: 5%;
   border-bottom: 1px solid black;
+}
+
+.article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.footer {
+  min-height: 20rem;
+  max-height: 100%;
+  background-color: black;
+  display:flex;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  align-items:center;
 }
 
 /* ------------ Elements --------------- */
@@ -31,13 +53,20 @@ modifier = .block__element--modifier
 }
 .section__text {
     width: 50%;
-    float: left;
 }
 
 .section__img {
     width: 50%;
-    float: right;
-    min-width: 20rem;
+}
+
+@media screen and (max-width: 600px) {
+  .section__text {
+      width: 100%;
+  }
+
+  .section__img {
+      width: 100%;
+  }
 }
 
 .form__msg {
@@ -50,10 +79,32 @@ modifier = .block__element--modifier
   margin-top: 1rem;
 }
 
+.article__img {
+  width: 100%;
+  height:auto;
+}
+
+.footer__logo {
+  height: 10rem;
+  width: auto;
+}
+
+.footer__text {
+  color: grey;
+  font-size: 0.6rem;
+}
+
 /* -------------Modifiers --------------- */
 
 .section__img--width {
     width: 100%;
+}
+.section--font {
+    font-family: "Vollkorn", serif;
+}
+
+.section--reverse {
+    flex-wrap: wrap-reverse;
 }
 
 .form--right {
@@ -70,6 +121,49 @@ modifier = .block__element--modifier
 .form__button--wrapper {
   width: 100%;
 }
+
+.footer--left {
+  margin-top: 1rem;
+  min-width: 30%;
+  max-width: 100%;
+}
+
+.footer--center {
+  margin-top: 1rem;
+  min-width: 30%;
+  max-width: 100%;
+}
+
+.footer--right {
+  margin-top: 1rem;
+  min-width: 30%;
+  max-width: 100%;
+}
+
+.article--width {
+  margin-top: 1rem;
+  width: 50%;
+  padding: 0 5%;
+}
+
+.article--img {
+  text-align: center;
+}
+
+.article--backcolor1 {
+  background-color: lime;
+}
+
+.article--backcolor2 {
+  background-color: pink;
+}
+
+@media screen and (max-width: 600px) {
+  .article--width {
+    width: 100%;
+  }
+}
+
 /* done */
 
 
@@ -160,7 +254,6 @@ modifier = .block__element--modifier
     padding-left: 0%;
   }
 }
-
 
 
 
