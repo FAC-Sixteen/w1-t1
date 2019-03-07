@@ -4,7 +4,11 @@ element = .block__element
 modifier = .block__element--modifier
             .block--modifier
 */
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 /* ----------- Blocks -------------- */
 
@@ -18,6 +22,16 @@ modifier = .block__element--modifier
   flex-wrap: wrap;
   padding-left: 5%;
   border-bottom: 1px solid black;
+}
+
+.footer {
+  min-height: 20rem;
+  max-height: 100%;
+  background-color: black;
+  display:flex;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  align-items:center;
 }
 
 /* ------------ Elements --------------- */
@@ -50,6 +64,16 @@ modifier = .block__element--modifier
   margin-top: 1rem;
 }
 
+.footer__logo {
+  height: 10rem;
+  width: auto;
+}
+
+.footer__text {
+  color: grey;
+  font-size: 0.6rem;
+}
+
 /* -------------Modifiers --------------- */
 
 .section__img--width {
@@ -69,4 +93,22 @@ modifier = .block__element--modifier
 
 .form__button--wrapper {
   width: 100%;
+}
+
+.footer--left {
+  margin-top: 1rem;
+  min-width: 30%;
+  max-width: 100%;
+}
+
+.footer--center {
+  margin-top: 1rem;
+  min-width: 30%;
+  max-width: 100%;
+}
+
+.footer--right {
+  margin-top: 1rem;
+  min-width: 30%;
+  max-width: 100%;
 }
