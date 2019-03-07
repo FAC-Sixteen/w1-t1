@@ -24,6 +24,12 @@ modifier = .block__element--modifier
   border-bottom: 1px solid black;
 }
 
+.article {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .footer {
   min-height: 20rem;
   max-height: 100%;
@@ -62,6 +68,11 @@ modifier = .block__element--modifier
 
 .form__button {
   margin-top: 1rem;
+}
+
+.article__img {
+  width: 80%;
+  height:auto;
 }
 
 .footer__logo {
@@ -118,4 +129,23 @@ modifier = .block__element--modifier
   margin-top: 1rem;
   min-width: 30%;
   max-width: 100%;
+}
+
+.article--left {
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.article--right {
+  margin-top: 1rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .article--right {
+    width: 100%;
+  }
+  .article--left {
+    width: 100%;
+  }
 }
