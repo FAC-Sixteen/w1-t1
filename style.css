@@ -54,8 +54,9 @@ modifier = .block__element--modifier
     width: 50%;
     display: inline-grid;
     align-items: center;
+    padding: 1%;
+    text-align: justify;
 }
-
 .section__team {
   background-color: purple;
 }
@@ -100,6 +101,14 @@ modifier = .block__element--modifier
   width: 100%;
   height:auto;
 }
+.article__title {
+  font-size: 2.5rem;
+  padding-bottom: 5%;
+}
+.article__txt {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
 
 .footer__logo {
   height: 10rem;
@@ -118,9 +127,12 @@ modifier = .block__element--modifier
     border-radius: 30px;
 }
 .section--font {
-    font-family: "Vollkorn", serif;
+    font-family: "Lato", serif;
 }
-
+.section__text--normal {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
 .section--reverse {
     flex-wrap: wrap-reverse;
 }
@@ -164,6 +176,9 @@ modifier = .block__element--modifier
   padding: 0 5%;
 }
 
+.article--role {
+    font-size: 1.4rem;
+}
 .article--img {
   text-align: center;
 }
