@@ -55,6 +55,22 @@ modifier = .block__element--modifier
     width: 50%;
 }
 
+.section__team {
+  background-color: purple;
+}
+
+.section__profile {
+  background-color: brown;
+}
+
+.section__form {
+  background-color: orange;
+}
+
+.section__title {
+  font-size: 2.5rem;
+}
+
 .section__img {
     width: 50%;
 }
