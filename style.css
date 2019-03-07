@@ -10,9 +10,6 @@ modifier = .block__element--modifier
   box-sizing: border-box;
 }
 
-
-  @import url('https://fonts.googleapis.com/css?family=Dancing+Script');
-
 h1 {
   font-family: 'Dancing Script', cursive;
   text-align: center;
@@ -31,6 +28,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  position: relative;
+  padding: 1%;
 }
 .section {
   display: flex;
@@ -114,6 +113,14 @@ h1 {
 
 .form__button {
   margin-top: 1rem;
+  background-color: gainsboro; /* Green */
+  border: 1px solid grey;
+  color: black;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
 }
 
 .article__img {
@@ -173,6 +180,7 @@ h1 {
 
 .form__button--wrapper {
   width: 100%;
+
 }
 
 .footer--left {
