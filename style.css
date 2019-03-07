@@ -20,8 +20,7 @@ modifier = .block__element--modifier
 .section {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 5%;
   border-bottom: 1px solid black;
 }
 
@@ -53,6 +52,8 @@ modifier = .block__element--modifier
 }
 .section__text {
     width: 50%;
+    display: inline-grid;
+    align-items: center;
 }
 
 .section__team {
@@ -114,6 +115,7 @@ modifier = .block__element--modifier
 
 .section__img--width {
     width: 100%;
+    border-radius: 30px;
 }
 .section--font {
     font-family: "Vollkorn", serif;
