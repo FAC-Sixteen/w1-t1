@@ -35,8 +35,7 @@ h1 {
 .section {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 5%;
   border-bottom: 1px solid black;
 }
 
@@ -70,6 +69,25 @@ h1 {
 }
 .section__text {
     width: 50%;
+    display: inline-grid;
+    align-items: center;
+    padding: 1%;
+    text-align: justify;
+}
+.section__team {
+  background-color: purple;
+}
+
+.section__profile {
+  background-color: brown;
+}
+
+.section__form {
+  background-color: orange;
+}
+
+.section__title {
+  font-size: 2.5rem;
 }
 
 .section__img {
@@ -100,6 +118,14 @@ h1 {
   width: 100%;
   height:auto;
 }
+.article__title {
+  font-size: 2.5rem;
+  padding-bottom: 5%;
+}
+.article__txt {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
 
 .footer__logo {
   height: 10rem;
@@ -115,11 +141,15 @@ h1 {
 
 .section__img--width {
     width: 100%;
+    border-radius: 30px;
 }
 .section--font {
-    font-family: "Vollkorn", serif;
+    font-family: "Lato", serif;
 }
-
+.section__text--normal {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
 .section--reverse {
     flex-wrap: wrap-reverse;
 }
@@ -163,6 +193,9 @@ h1 {
   padding: 0 5%;
 }
 
+.article--role {
+    font-size: 1.4rem;
+}
 .article--img {
   text-align: center;
 }
