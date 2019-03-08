@@ -201,6 +201,10 @@ h1 {
   max-width: 100%;
 }
 
+.footer__link--number {
+  list-style-type: none;
+}
+
 .footer--right {
   margin-top: 1rem;
   min-width: 30%;
