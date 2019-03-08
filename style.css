@@ -64,10 +64,11 @@ h1 {
 /* ------------ Elements --------------- */
 
 .header__image {
-  max-width: 100%;
-  width: 100%;
-  height: 45rem;
-  position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 45rem;
+    position: relative;
+    object-fit: cover;
 }
 
 .section__heading {
@@ -187,7 +188,10 @@ h1 {
 /* -------------Modifiers --------------- */
 
 .section__img--width {
-  width: 100%;
+    width: 100%;;
+}
+
+.image--border {
   border-radius: 30px;
 }
 
@@ -272,7 +276,6 @@ h1 {
   text-align: center;
   display: inline-block;
   margin: 0;
-
 }
 
 .header__ul--li .ul__li--a {
