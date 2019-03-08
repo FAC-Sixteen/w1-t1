@@ -85,7 +85,10 @@ h1 {
 }
 
 .section__form {
-  background-color:  #29a8ab;
+  background-color: #403B4A;  /* fallback for old browsers */
+  background-image: linear-gradient(to right, #E7E9BB, #403B4A);
+  background-position: top;
+  background-size: cover;
 }
 
 .section__title {
@@ -106,17 +109,31 @@ h1 {
       width: 100%;
   }
 }
+.form__input {
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    box-shadow: 5px 5px 4px #888888;
+}
 
 .form__msg {
-  height: 100px;
+  height: 140px;
   width: 80%;
   min-width: 15rem;
+  font-size: 1rem;
+  box-shadow: 5px 5px 4px #888888;
+}
+
+.form__input:valid, .form__msg:valid {
+        border: 2px solid greenyellow;
 }
 
 .form__button {
   margin-top: 1rem;
   background-color: gainsboro; /* Green */
-  border: 1px solid grey;
+  border: none;
+  box-shadow: 5px 5px 4px #888888;
   color: black;
   padding: 1rem 2rem;
   text-align: center;
