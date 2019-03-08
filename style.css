@@ -20,7 +20,7 @@ h1 {
   font-style: italic;
   position: absolute;
   top: 30%;
-  left: 25%;
+  left: 30%;
   color: white;
 }
 
@@ -64,11 +64,11 @@ h1 {
 /* ------------ Elements --------------- */
 
 .header__image {
-    max-width: 100%;
-    width: 100%;
-    height: 45rem;
-    position: relative;
-    object-fit: cover;
+  max-width: 100%;
+  width: 100%;
+  height: 45rem;
+  position: relative;
+  object-fit: cover;
 }
 
 .section__heading {
@@ -188,7 +188,8 @@ h1 {
 /* -------------Modifiers --------------- */
 
 .section__img--width {
-    width: 100%;;
+  width: 100%;
+  ;
 }
 
 .image--border {
@@ -262,7 +263,7 @@ h1 {
 }
 
 .article--backcolor2 {
-  background-color: #afafaf;
+  background-color: #29a8ab;
 }
 
 @media screen and (max-width: 600px) {
