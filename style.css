@@ -160,9 +160,13 @@ h1 {
 }
 
 .section__img--width {
-    width: 100%;
-    border-radius: 30px;
+    width: 100%;;
 }
+
+.image--border {
+  border-radius: 30px;
+}
+
 .section--font {
     font-family: "Lato", serif;
 }
